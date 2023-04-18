@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="${listing.name}"> </p>
+<p th:text="${listing.description}"> </p>
+<p th:text="${listing.stock}"> </p>
+<p th:text="${listing.price}"> </p>
+<a th:href="@{/views/shopping-cart/{id}(id=${listing.id})}">order</a>
+
+</body>
+</html>

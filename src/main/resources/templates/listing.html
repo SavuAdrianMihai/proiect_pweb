@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listings</title>
+</head>
+<body>
+
+    <table>
+        <tr th:each="listing:${listings}">
+            <td th:text="${listing.name}">
+            </td>
+            <td>
+                <button>
+                <a th:href="@{/views/listings/{id}(id=${listing.id})}">more</a>
+                </button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
